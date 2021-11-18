@@ -14,8 +14,8 @@ print(sum_to(10)) # returns 55
 def largest(lst):
   return max(lst)
 
-print(largest([1, 2, 3, 4, 0]))  # returns 4
-print(largest([10, 4, 2, 231, 91, 54]))  # returns 231
+print(largest([1, 2, 3, 4, 0])) # returns 4
+print(largest([10, 4, 2, 231, 91, 54])) # returns 231
 
 # alt947
 # def largest(nums):
@@ -33,3 +33,13 @@ print(occurances('bleep bloop', 'ee')) # returns 1
 print(occurances('bleep bloop', 'be')) # returns 0
 
 # Challenge 4
+
+def product(*nums):
+  product = 1
+  for num in nums:
+    product *= num
+  return product
+  
+print(product(-1, 4)) # returns -4
+print(product(2, 5, 5)) # returns 50
+print(product(4, 0.5, 5)) # returns 10.0
