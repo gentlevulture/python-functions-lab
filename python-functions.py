@@ -24,4 +24,12 @@ print(largest([10, 4, 2, 231, 91, 54]))  # returns 231
 
 # Challenge 3
 
+def occurances(str1, str2):
+  return str1.count(str2)
+
+print(occurances('bleep bloop', 'e')) # returns 2
+print(occurances('bleep bloop', 'p')) # returns 2
+print(occurances('bleep bloop', 'ee')) # returns 1
+print(occurances('bleep bloop', 'be')) # returns 0
+
 # Challenge 4
